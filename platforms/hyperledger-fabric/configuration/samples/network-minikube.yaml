@@ -109,13 +109,13 @@ network:
       gitops:
         git_protocol: "https"
         git_url: "https://github.com/hoang-tranviet/blockchain-automation-framework.git"  # Gitops ssh url for flux value files 
-        branch: "azure"                                                                 # Git branch where release is being made
+        branch: "temp"                                                                 # Git branch where release is being made
         release_dir: "platforms/hyperledger-fabric/releases/dev"                        # Relative Path in the Git repo for flux sync per environment. 
         chart_source: "platforms/hyperledger-fabric/charts"                             # Relative Path where the Helm charts are stored in Git repo
         git_repo: "github.com/hoang-tranviet/blockchain-automation-framework.git"       # Gitops https URL for git push  (without https://)
         username: "hoang-tranviet"                                                     # Git user who has rights to check-in in all branches
-        password: ""                                                        # Git Server user password or token
-        email: "github_email"                                                           # Email to use in git config
+        password: "d0c41c473da15117e3097df5fcd5c1578db4a9d5"                                                        # Git Server user password or token
+        email: "hoang.tran@uclouvain.be"                                                           # Email to use in git config
         private_key: "/home/ubuntu/blockchain-automation-framework/build/gitops"               # Path to private key file which has write-access to the git repo
      
       # Services maps to the pods that will be deployed on the k8s cluster
@@ -180,13 +180,13 @@ network:
       gitops:
         git_protocol: "https"
         git_url: "https://github.com/hoang-tranviet/blockchain-automation-framework.git"  # Gitops ssh url for flux value files 
-        branch: "azure"                                                                 # Git branch where release is being made
+        branch: "temp"                                                                 # Git branch where release is being made
         release_dir: "platforms/hyperledger-fabric/releases/dev"                        # Relative Path in the Git repo for flux sync per environment. 
         chart_source: "platforms/hyperledger-fabric/charts"                             # Relative Path where the Helm charts are stored in Git repo
         git_repo: "github.com/hoang-tranviet/blockchain-automation-framework.git"       # Gitops https URL for git push  (without https://)
         username: "hoang-tranviet"                                                     # Git user who has rights to check-in in all branches
-        password: ""                                                        # Git Server user password or token
-        email: "github_email"                                                           # Email to use in git config
+        password: "d0c41c473da15117e3097df5fcd5c1578db4a9d5"                                                        # Git Server user password or token
+        email: "hoang.tran@uclouvain.be"                                                           # Email to use in git config
         private_key: "/home/ubuntu/blockchain-automation-framework/build/gitops"               # Path to private key file which has write-access to the git repo
      
 
@@ -225,9 +225,9 @@ network:
             maindirectory: "cmd"   # The main directory where chaincode is needed to be placed
             repository:
               username: "hoang-tranviet"          # Git user
-              password: ""             # Git token or password of above user
+              password: "d0c41c473da15117e3097df5fcd5c1578db4a9d5"             # Git token or password of above user
               url: "github.com/hoang-tranviet/blockchain-automation-framework.git"
-              branch: develop
+              branch: temp
               path: "examples/supplychain-app/fabric/chaincode_rest_server/chaincode/"  #The path to the chaincode in the repo
             arguments: '\"init\",\"\"'                                                  #Arguments to be passed along with the chaincode parameters
             endorsements: ""                                                            #Endorsements (if any) provided along with the chaincode
@@ -266,13 +266,13 @@ network:
       gitops:
         git_protocol: "https"
         git_url: "https://github.com/hoang-tranviet/blockchain-automation-framework.git"  # Gitops ssh url for flux value files 
-        branch: "azure"                                                                 # Git branch where release is being made
+        branch: "temp"                                                                 # Git branch where release is being made
         release_dir: "platforms/hyperledger-fabric/releases/dev"                        # Relative Path in the Git repo for flux sync per environment. 
         chart_source: "platforms/hyperledger-fabric/charts"                             # Relative Path where the Helm charts are stored in Git repo
         git_repo: "github.com/hoang-tranviet/blockchain-automation-framework.git"       # Gitops https URL for git push  (without https://)
         username: "hoang-tranviet"                                                     # Git user who has rights to check-in in all branches
-        password: ""                                                        # Git Server user password or token
-        email: "github_email"                                                           # Email to use in git config
+        password: "d0c41c473da15117e3097df5fcd5c1578db4a9d5"                                                        # Git Server user password or token
+        email: "hoang.tran@uclouvain.be"                                                           # Email to use in git config
         private_key: "/home/ubuntu/blockchain-automation-framework/build/gitops"               # Path to private key file which has write-access to the git repo
      
 
@@ -309,9 +309,9 @@ network:
             maindirectory: "cmd"   # The main directory where chaincode is needed to be placed
             repository:
               username: "hoang-tranviet"          # Git user
-              password: ""             # Git token or password of above user
+              password: "d0c41c473da15117e3097df5fcd5c1578db4a9d5"             # Git token or password of above user
               url: "github.com/hoang-tranviet/blockchain-automation-framework.git"
-              branch: develop
+              branch: temp
               path: "examples/supplychain-app/fabric/chaincode_rest_server/chaincode/"  #The path to the chaincode in the repo
             arguments: '\"init\",\"\"'                                                  #Arguments to be passed along with the chaincode parameters
             endorsements: ""                                                            #Endorsements (if any) provided along with the chaincode
