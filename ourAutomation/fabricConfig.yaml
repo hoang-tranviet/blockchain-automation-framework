@@ -1,16 +1,16 @@
 domain_name: svc.cluster.local
-pathToBAF: /root/hyperledger-labs/myFork/blockchain-automation-framework
+pathToBAF: /home/ubuntu/ayham/baf
 cloud_provider: minikube
 
 BAFChaincodePath: examples/supplychain-app/fabric/chaincode_rest_server/chaincode/
 
 BAFk8s:
-  context: "local"
+  context: "cluster.local"
   config_file: "~/.kube/config"
 
 vault:
-  url: "http://130.104.229.14:30000"
-  root_token: "s.5KkfEk3Upun8A1fQr1PfjRWL"
+  url: "http://10.10.2.5:30000"
+  root_token: "s.4fdn3q75Q9F4HfN5c2j5wWhc"
 
 
 organizations:
@@ -32,7 +32,7 @@ organizations:
 - id: 3
   name: buyer
   orderer: supplychain
-  numberOfPeers: 4
+  numberOfPeers: 1
   endorser: true
 
 - id: 4

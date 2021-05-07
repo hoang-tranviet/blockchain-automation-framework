@@ -1,4 +1,4 @@
-VAULT_ADDR: http://130.104.229.14:30000
+VAULT_ADDR: http://10.10.2.5:30000
 ingress:
   tls: []
   hosts:
@@ -27,7 +27,7 @@ nodeSelector: {}
 tolerations: []
 ENDORSING_ORG_NAMES: "carrier manufacturer buyer"
 nameOverride: 
-VAULT_TOKEN: s.5KkfEk3Upun8A1fQr1PfjRWL
+VAULT_TOKEN: s.4fdn3q75Q9F4HfN5c2j5wWhc
 replicaMasterCount: 1
 affinity: {}
 resources: {}
